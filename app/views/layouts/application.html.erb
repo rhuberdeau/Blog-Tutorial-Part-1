@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlogTutorial</title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'print',  :media => 'print' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div class= "container">
+  <div class="span-17 colborder" id="content">
+    <%= yield %>
+  </div>
+  <div class="span-4 last" id="sidebar"></div>
+</div>
+</body>
